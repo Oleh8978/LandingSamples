@@ -1,0 +1,25 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "colors";
+
+// css files 
+@import "normalize";
+@import "general";
+
+//mixins
+@import "mixins";
+
+// styles 
+@import "header/navigation";
+
+// sections
+@import "section2/section";
+@import "section3/section";
+@import "section5/section";
+@import "section6/section";
+
+// footer
+@import "footer/footer";
+
+

@@ -4,11 +4,487 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css" />
 	<!-- <script src="js/main.js"></script> -->
     <title>Document</title>
 </head>
 <body>
-  
+    <section class="header-navigation">
+
+        <header class="header-menu">
+
+			<span class="header-menu-container">
+				<nav class="header-menu-container-left">
+					<a href="#">Home</a>
+					<a href="#">Product</a>
+					<a href="#">Pricing</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</nav>
+
+				<span class="header-menu-container-right">
+
+					<a href="#" class="nav-picture-tvt">
+						<svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z" fill="white"/>
+						</svg>
+					</a>
+
+					<a href="#" class="nav-picture-fb">
+						<svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z" fill="white"/>
+						</svg>
+					</a>
+
+					<a href="#" class="nav-picture-in">
+						<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.736 4.98962H6.27692C5.56847 4.98962 4.99609 5.562 4.99609 6.27046V35.7296C4.99609 36.438 5.56847 37.0104 6.27692 37.0104H35.736C36.4445 37.0104 37.0169 36.438 37.0169 35.7296V6.27046C37.0169 5.562 36.4445 4.98962 35.736 4.98962ZM14.4943 32.2753H9.74317V16.9934H14.4943V32.2753ZM12.1207 14.9041C11.5761 14.9041 11.0437 14.7425 10.5908 14.44C10.1379 14.1374 9.78498 13.7073 9.57655 13.2041C9.36812 12.7009 9.31359 12.1472 9.41984 11.613C9.5261 11.0789 9.78837 10.5882 10.1735 10.203C10.5586 9.81792 11.0493 9.55565 11.5835 9.4494C12.1177 9.34314 12.6714 9.39768 13.1745 9.6061C13.6777 9.81453 14.1078 10.1675 14.4104 10.6203C14.713 11.0732 14.8745 11.6056 14.8745 12.1503C14.8705 13.6713 13.6377 14.9041 12.1207 14.9041ZM32.2818 32.2753H27.5347V24.8425C27.5347 23.0694 27.5027 20.7919 25.0651 20.7919C22.5955 20.7919 22.2153 22.7211 22.2153 24.7144V32.2753H17.4722V16.9934H22.0271V19.0828H22.0912C22.7236 17.882 24.2726 16.6132 26.5861 16.6132C31.3972 16.6132 32.2818 19.7792 32.2818 23.8939V32.2753Z" fill="white"/>
+						</svg>
+					</a>
+
+				</span>
+			</span>
+
+        </header>
+
+		<span class="header-menu-small">
+			<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z" fill="white"/>
+			</svg>
+		</span>
+
+		<span class="h-wrapper">
+
+			<h1 class="main-header">The best products starts with us</h1>
+
+			<h2 class="main-header-sub">Most CRM are designed for big companies. This landing web page for small business</h2>
+		
+		</span>
+
+		<span class="btn-start"><h3 class="btn-start-txt">Try For Free</h3></span>
+
+    </section>
+
+	<section class="section-2">
+
+		<h3 class="header-section-2">Features</h3>
+		<p class="description-section-2">Most Calendars are designed for teams.</p>
+		<p class="description-section-2">Slate is designed for frelancers</p>
+
+		<div class="description-container">
+
+			<span class="description-container-item">
+
+				<svg class="description-container-item-picture" width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M21.6042 7.625C25.3117 7.625 28.8673 9.0978 31.4889 11.7194C34.1105 14.341 35.5833 17.8967 35.5833 21.6042C35.5833 24.9846 34.3888 28.0854 32.3808 30.5H53.375V53.375H30.5V32.3808C28.0854 34.3888 24.9846 35.5833 21.6042 35.5833C17.8967 35.5833 14.341 34.1105 11.7194 31.4889C9.0978 28.8673 7.625 25.3117 7.625 21.6042C7.625 17.8967 9.0978 14.341 11.7194 11.7194C14.341 9.0978 17.8967 7.625 21.6042 7.625Z" fill="#2091F9"/>
+				</svg>
+
+				<h4 class="description-container-item-header">
+					Open type features Variable fonts 
+				</h4>
+
+				<p class="description-container-item-text">
+					Slate helps you see how 
+					many more days you need 
+					to work to reach your 
+					financial goal.
+				</p>
+
+			</span>
+
+			<span class="description-container-item">
+
+				<svg class="description-container-item-picture" width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.2486 48.65C27.402 47.0167 26.492 42.5134 24.392 39.6667C22.3153 36.75 19.4453 34.7434 16.552 32.8067C14.4876 31.5055 12.6443 29.8829 11.092 28C10.4386 27.23 9.10863 25.8067 10.462 25.5267C11.8386 25.2467 14.2186 26.6 15.432 27.1134C17.5553 28 19.6553 29.0267 21.6153 30.24L23.972 26.2734C20.332 23.87 15.6653 21.7467 11.3253 21.1167C8.85197 20.7434 6.23863 21.2567 5.39863 23.94C4.65197 26.25 5.84197 28.5834 7.1953 30.4034C10.392 34.6734 15.362 36.7267 19.072 40.4134C19.8653 41.1834 20.822 42.0934 21.2886 43.1667C21.7786 44.1934 21.662 44.2634 20.5653 44.2634C17.672 44.2634 14.0553 42 11.6986 40.5067L9.34197 44.4734C12.912 46.6667 18.8853 50.0967 23.2486 48.65ZM49.1253 12.25C49.6386 11.7367 49.6386 10.8967 49.1253 10.4067L46.092 7.37337C45.8476 7.13783 45.5214 7.00623 45.182 7.00623C44.8425 7.00623 44.5164 7.13783 44.272 7.37337L41.892 9.75337L46.7453 14.6067L49.1253 12.25ZM26.1653 25.48V30.3334H31.0186L45.3686 15.9834L40.5153 11.13L26.1653 25.48Z" fill="#2091F9"/>
+				</svg>
+
+				<h4 class="description-container-item-header">
+					Design with real data
+				</h4>
+
+				<p class="description-container-item-text">
+					Slate helps you see how 
+					many more days you need 
+					to work to reach your 
+					financial goal.
+				</p>	
+
+			</span>
+
+			<span class="description-container-item">
+
+				<svg class="description-container-item-picture" width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M52.6366 11.7679L49.2308 8.36209C48.2904 7.37084 46.6383 7.37084 45.647 8.36209L22.8737 31.1354L29.8633 38.125L52.6366 15.3517C53.6279 14.3604 53.6279 12.7083 52.6366 11.7679ZM17.7904 35.5833C15.7681 35.5833 13.8286 36.3867 12.3987 37.8167C10.9687 39.2466 10.1654 41.1861 10.1654 43.2083C10.1654 46.5379 7.21703 48.2917 5.08203 48.2917C7.42036 51.3925 11.4362 53.375 15.2487 53.375C17.9451 53.375 20.531 52.3039 22.4376 50.3973C24.3442 48.4906 25.4154 45.9047 25.4154 43.2083C25.4154 41.1861 24.612 39.2466 23.1821 37.8167C21.7521 36.3867 19.8126 35.5833 17.7904 35.5833Z" fill="#2091F9"/>
+				</svg>
+
+				<h4 class="description-container-item-header">
+					Fastest way to take action
+				</h4>
+
+				<p class="description-container-item-text">
+					Slate helps you see how 
+					many more days you need 
+					to work to reach your 
+					financial goal.
+				</p>
+
+			</span>
+
+		</div>
+
+		<div class="iframe-video">
+			<span class="iframe-video-btn">
+				<svg class="iframe-video-btn-center" width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.402344 0.593994L39.4434 24.0186L0.402344 47.4432V0.593994Z" fill="white"/>
+				</svg>
+			</span>
+		</div>
+
+	</section>
+
+	<section class="section3">
+
+		<div class="section3-container">
+
+			<div class="section3-container-left">
+				<h5 class="section3-container-left-header">
+					Fastest way to organize
+				</h5>
+				<p class="section3-container-left-txt">
+					Most calendars are designed for teams. 
+					Slate is designed for freelancers
+				</p>
+				<span class="btn-start section3-container-left-btn">
+					<h3 class="btn-start-txt section3-container-left-btn-txt">
+						Try For Free
+					</h3>
+				</span>
+			</div>
+
+			<div class="section3-container-right">
+				<img src="img/mackbook.png" alt="pc" class="section3-container-right-img">
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section3">
+
+		<div class="section3-container">
+
+			<div class="section3-container-left">
+				<img src="img/leftpic.png" alt="pc" class="section3-container-right-img">
+			</div>
+
+			<div class="section3-container-right section3-container-left">
+				<h6 class="section3-container-left-header-top textaligner">
+					At your fingerprints
+				</h6>
+				<h5 class="section3-container-left-header emailtxt">
+					Lightning fast prototyping
+				</h5>
+
+				<h7 class="section3-container-left-header-bold textaligner">Subscribe for our Newsletters</h7>
+				<p class="section3-container-left-txt textaligner">
+					Available only on our network
+				</p>
+				<div class="email-container">
+					<input type="email" class="email-container-input " placeholder="Type your email"/>
+					<span class="btn-start section3-container-left-btn email-container-input-btn">
+						<h3 class="btn-start-txt section3-container-left-btn-txt">
+							Subscribe
+						</h3>
+					</span>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section5">
+		<div class="section5-container__top">
+
+			<h5 class="section3-container-left-header section5-tophead">
+				Pricing
+			</h5>
+
+			<h7 class="section3-container-left-header-bold section5-topsubhead">
+				Type of plans
+			</h7>
+
+		</div>
+
+		<div lass="section5-container__bottom">
+
+			<div class="section5-container__bottom-wrapper">
+				<div class="section5-container__bottom-wrapper-card">
+					<h4 class="section5-header">Free</h4>
+					<p class="section5-description">Absolutely free </p>
+
+					<span class="section5-priceContainer">
+						<span class="section5-priceContainer__left">
+							<h1 class="section5-priceContainer__left-text">0</h1>
+						</span>
+						<span class="section5-priceContainer__right">
+							<h1 class="section5-priceContainer__right__top-text">$</h1>
+							<h1 class="section5-priceContainer__right__bottom-text">Per Month</h1>
+						</span>
+					</span>
+
+					<span class="section5-bodycard">
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+					</span>
+				</div>
+
+				<div class="section5-container__bottom-wrapper-card">
+					<h4 class="section5-header">Standart</h4>
+					<p class="section5-description">For users who want to have more flexibility</p>
+
+					<span class="section5-priceContainer">
+						<span class="section5-priceContainer__left">
+							<h1 class="section5-priceContainer__left-text">0</h1>
+						</span>
+						<span class="section5-priceContainer__right">
+							<h1 class="section5-priceContainer__right__top-text">$</h1>
+							<h1 class="section5-priceContainer__right__bottom-text">Per Month</h1>
+						</span>
+					</span>
+					<span class="section5-bodycard">
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+					</span>
+				</div>
+
+				<div class="section5-container__bottom-wrapper-card displayer">
+					<h4 class="section5-header">Premium</h4>
+					<p class="section5-description">Absolutely flexible  and all services are included</p>
+
+					<span class="section5-priceContainer">
+						<span class="section5-priceContainer__left">
+							<h1 class="section5-priceContainer__left-text">0</h1>
+						</span>
+						<span class="section5-priceContainer__right">
+							<h1 class="section5-priceContainer__right__top-text">$</h1>
+							<h1 class="section5-priceContainer__right__bottom-text">Per Month</h1>
+						</span>
+					</span>
+					<span class="section5-bodycard">
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+						<p class="section5-bodycard-element">Element of policy </p>
+					</span>
+				</div>
+
+			</div>
+
+			<div class="section5-container__bottom-wrapper-card middle">
+				<h4 class="section5-header">Premium</h4>
+				<p class="section5-description">Absolutely flexible and all services are included</p>
+
+				<span class="section5-priceContainer">
+					<span class="section5-priceContainer__left">
+						<h1 class="section5-priceContainer__left-text">0</h1>
+					</span>
+					<span class="section5-priceContainer__right">
+						<h1 class="section5-priceContainer__right__top-text">$</h1>
+						<h1 class="section5-priceContainer__right__bottom-text">Per Month</h1>
+					</span>
+				</span>
+
+				<span class="section5-bodycard">
+					<p class="section5-bodycard-element">Element of policy </p>
+					<p class="section5-bodycard-element">Element of policy </p>
+					<p class="section5-bodycard-element">Element of policy </p>
+					<p class="section5-bodycard-element">Element of policy </p>
+					<p class="section5-bodycard-element">Element of policy </p>
+				</span>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="section6">
+
+		<div class="section6-header">
+			<h5 class="section6-header-txt">Contact Us</h5>
+			<h5 class="section6-header__sub-txt">We can calculate the price for you </h5>
+		</div>
+
+		<div class="section6-body">
+
+			<div class="section6-body-contact">
+
+				<h1 class="section6-body-contact-header"> 
+					Contact US
+				</h1>
+
+				<form action="" class="form">
+
+					<input 
+					 type="text" 
+					 name="name" 
+					 placeholder="Your Name"
+					 class="form-input"
+					>
+
+					<input 
+					 type="email" 
+					 name="email"
+					 class="form-input" 
+					 placeholder="Your Email"
+					 >
+
+					<textarea class="textarea"></textarea>
+
+					<input 
+					 type="submit" 
+					 value="Send"
+					 class="form-input-btn"
+					>
+
+				  </form>
+
+			</div>
+
+			<div class="section6-body-gmap">
+
+				<div class="section6-body-gmap__bottom">
+
+					<div class="section6-body-gmap__bottom-contacts">
+
+						<div class="section6-body-gmap__bottom-contacts-item">
+
+							<svg width="26" height="33" viewBox="0 0 26 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="section6-body-gmap__bottom-contacts-item-img">
+								<g clip-path="url(#clip0)">
+								<path d="M13.0013 19.884C16.4941 19.884 19.3346 17.0435 19.3346 13.5506C19.3346 10.0578 16.4941 7.21729 13.0013 7.21729C9.50847 7.21729 6.66797 10.0578 6.66797 13.5506C6.66797 17.0435 9.50847 19.884 13.0013 19.884ZM13.0013 10.384C14.7477 10.384 16.168 11.8042 16.168 13.5506C16.168 15.297 14.7477 16.7173 13.0013 16.7173C11.2549 16.7173 9.83464 15.297 9.83464 13.5506C9.83464 11.8042 11.2549 10.384 13.0013 10.384Z" fill="#2091F9"/>
+								<path d="M11.7485 32.256C12.0164 32.4473 12.3375 32.5502 12.6668 32.5502C12.9961 32.5502 13.3172 32.4473 13.5851 32.256C14.0665 31.9155 25.3794 23.7471 25.3335 13.5505C25.3335 6.56637 19.6509 0.883789 12.6668 0.883789C5.68272 0.883789 0.000139393 6.56637 0.000139393 13.5425C-0.0457773 23.7471 11.2671 31.9155 11.7485 32.256ZM12.6668 4.05046C17.9061 4.05046 22.1668 8.31121 22.1668 13.5584C22.2001 20.5852 15.2191 26.8948 12.6668 28.9642C10.1161 26.8932 3.13356 20.582 3.16681 13.5505C3.16681 8.31121 7.42756 4.05046 12.6668 4.05046Z" fill="#2091F9"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="26" height="32" fill="white" transform="translate(0 0.717285)"/>
+								</clipPath>
+								</defs>
+							</svg>
+
+							<h5 class="section6-body-gmap__bottom-contacts-item-description">
+								Our location 123 street example
+							</h5>
+
+						</div>
+
+						<div class="section6-body-gmap__bottom-contacts-item">
+
+							<svg width="22" height="35" viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="section6-body-gmap__bottom-contacts-item-img">
+								<g clip-path="url(#clip0)">
+								<path d="M16.5417 1.17578H4.875C2.45417 1.17578 0.5 3.12995 0.5 5.55078V28.8841C0.5 31.3049 2.45417 33.2591 4.875 33.2591H16.5417C18.9625 33.2591 20.9167 31.3049 20.9167 28.8841V5.55078C20.9167 3.12995 18.9625 1.17578 16.5417 1.17578ZM13.625 30.3424H7.79167V28.8841H13.625V30.3424ZM18.3646 25.9674H3.05208V5.55078H18.3646V25.9674Z" fill="#2091F9"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="21" height="34" fill="white" transform="translate(0.5 0.217285)"/>
+								</clipPath>
+								</defs>
+							</svg>
+
+							<h5 class="section6-body-gmap__bottom-contacts-item-description">
+								+0(000) 000 000
+							</h5>
+
+						</div>
+
+						<div class="section6-body-gmap__bottom-contacts-item">
+
+							<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="section6-body-gmap__bottom-contacts-item-img">
+								<g clip-path="url(#clip0)">
+								<path d="M25.8125 0.904785H1.4375C0.918945 0.904785 0.5 1.32373 0.5 1.84229V20.5923C0.5 21.1108 0.918945 21.5298 1.4375 21.5298H25.8125C26.3311 21.5298 26.75 21.1108 26.75 20.5923V1.84229C26.75 1.32373 26.3311 0.904785 25.8125 0.904785ZM24.6406 4.15088V19.4204H2.60938V4.15088L1.80078 3.521L2.95215 2.0415L4.20605 3.01709H23.0469L24.3008 2.0415L25.4521 3.521L24.6406 4.15088ZM23.0469 3.01416L13.625 10.3384L4.20312 3.01416L2.94922 2.03857L1.79785 3.51807L2.60645 4.14795L12.6143 11.9292C12.9021 12.1528 13.2561 12.2742 13.6206 12.2742C13.9851 12.2742 14.3391 12.1528 14.627 11.9292L24.6406 4.15088L25.4492 3.521L24.2979 2.0415L23.0469 3.01416Z" fill="#2091F9"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="27" height="22" fill="white" transform="translate(0.5 0.217285)"/>
+								</clipPath>
+								</defs>
+							</svg>
+
+							<h5 class="section6-body-gmap__bottom-contacts-item-description">
+								example@email.com
+							</h5>
+
+						</div>
+
+					</div>
+
+					<div class="section6-body-gmap__bottom-map" id="map">
+						<img src="img/map.png" alt="pc" class="section6-img">
+					</div>
+
+					<div class="section6-body-gmap__bottom-socmed">
+
+						<a href="#" class="section6-body-gmap__bottom-socmed-wrapper">
+							<svg width="42" height="42" viewBox="0 0 42 42" fill="none" class="section6-body-gmap__bottom-socmed-wrapper-img" xmlns="http://www.w3.org/2000/svg">
+								<path d="M37.6455 11.0808C36.4207 11.6091 35.0878 11.9894 33.7149 12.1375C35.1403 11.2907 36.2077 9.95287 36.7168 8.37505C35.3793 9.17072 33.914 9.72866 32.386 10.0241C31.7474 9.34138 30.975 8.79748 30.117 8.42631C29.2589 8.05514 28.3337 7.86465 27.3988 7.86672C23.6163 7.86672 20.5744 10.9327 20.5744 14.6951C20.5744 15.2235 20.6384 15.7518 20.7425 16.2602C15.0788 15.964 10.0275 13.2582 6.66936 9.11553C6.05746 10.1607 5.7368 11.3507 5.74075 12.5618C5.74075 14.9313 6.94553 17.0207 8.78273 18.2495C7.70004 18.2068 6.64271 17.9092 5.69672 17.3809V17.4649C5.69672 20.7831 8.04225 23.5329 11.1683 24.1653C10.5813 24.3178 9.97753 24.3957 9.37111 24.3974C8.92682 24.3974 8.50655 24.3534 8.08227 24.2934C8.94683 26.9991 11.4645 28.9644 14.4624 29.0284C12.1169 30.8656 9.17898 31.9463 5.98891 31.9463C5.41654 31.9463 4.8882 31.9263 4.33984 31.8623C7.36581 33.8035 10.9561 34.9243 14.8226 34.9243C27.3748 34.9243 34.2432 24.5255 34.2432 15.4997C34.2432 15.2035 34.2432 14.9073 34.2232 14.6111C35.5521 13.6385 36.7168 12.4337 37.6455 11.0808Z" fill="#2091F9"/>
+							</svg>
+						</a>
+
+						<a href="#" class="section6-body-gmap__bottom-socmed-wrapper">
+							<svg width="42" height="42" viewBox="0 0 42 42" fill="none" class="section6-body-gmap__bottom-socmed-wrapper-img" xmlns="http://www.w3.org/2000/svg">
+								<path d="M35.7126 5.38525H6.25349C5.54503 5.38525 4.97266 5.95763 4.97266 6.66609V36.1252C4.97266 36.8337 5.54503 37.406 6.25349 37.406H35.7126C36.4211 37.406 36.9934 36.8337 36.9934 36.1252V6.66609C36.9934 5.95763 36.4211 5.38525 35.7126 5.38525ZM32.0142 14.7313H29.4565C27.4512 14.7313 27.063 15.6839 27.063 17.0848V20.1708H31.8501L31.2257 25.002H27.063V37.406H22.0718V25.006H17.897V20.1708H22.0718V16.6085C22.0718 12.4739 24.5974 10.2204 28.2878 10.2204C30.0569 10.2204 31.5739 10.3525 32.0182 10.4125V14.7313H32.0142Z" fill="#2091F9"/>
+							</svg>
+						</a>
+
+						<a href="#" class="section6-body-gmap__bottom-socmed-wrapper">
+							<svg width="42" height="42" viewBox="0 0 42 42" fill="none" class="section6-body-gmap__bottom-socmed-wrapper-img" xmlns="http://www.w3.org/2000/svg">
+								<path d="M35.697 5.38525H6.23786C5.5294 5.38525 4.95703 5.95763 4.95703 6.66609V36.1252C4.95703 36.8337 5.5294 37.406 6.23786 37.406H35.697C36.4054 37.406 36.9778 36.8337 36.9778 36.1252V6.66609C36.9778 5.95763 36.4054 5.38525 35.697 5.38525ZM14.4552 32.671H9.70411V17.389H14.4552V32.671ZM12.0817 15.2997C11.537 15.2997 11.0046 15.1382 10.5517 14.8356C10.0989 14.533 9.74591 14.1029 9.53749 13.5997C9.32906 13.0965 9.27453 12.5428 9.38078 12.0087C9.48704 11.4745 9.74931 10.9838 10.1344 10.5987C10.5196 10.2136 11.0102 9.95128 11.5444 9.84503C12.0786 9.73877 12.6323 9.7933 13.1355 10.0017C13.6387 10.2102 14.0688 10.5631 14.3713 11.016C14.6739 11.4688 14.8354 12.0013 14.8354 12.5459C14.8314 14.0669 13.5986 15.2997 12.0817 15.2997ZM32.2427 32.671H27.4957V25.2381C27.4957 23.465 27.4636 21.1875 25.0261 21.1875C22.5565 21.1875 22.1762 23.1168 22.1762 25.1101V32.671H17.4331V17.389H21.9881V19.4784H22.0521C22.6845 18.2776 24.2335 17.0088 26.547 17.0088C31.3582 17.0088 32.2427 20.1748 32.2427 24.2895V32.671Z" fill="#2091F9"/>
+							</svg>
+						</a>
+
+					</div>
+
+				</div>
+
+				<script
+					src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+					async
+				></script>
+
+			</div>
+		</div>
+		
+	</section>
+
+	<footer class="footer">
+		<h7 class="footer-header">All rights are reserved by Undefined</h1>
+			<div class="footer-links">
+				<a href="#" class="footer-links-item">
+					<svg class="footer-links-item-img" width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M37.1455 10.4817C35.9207 11.01 34.5878 11.3903 33.2149 11.5384C34.6403 10.6916 35.7077 9.35375 36.2168 7.77592C34.8793 8.5716 33.414 9.12954 31.886 9.42499C31.2474 8.74226 30.475 8.19836 29.617 7.82719C28.7589 7.45602 27.8337 7.26553 26.8988 7.26759C23.1163 7.26759 20.0744 10.3336 20.0744 14.096C20.0744 14.6244 20.1384 15.1527 20.2425 15.661C14.5788 15.3648 9.52753 12.6591 6.16936 8.5164C5.55746 9.56154 5.2368 10.7516 5.24075 11.9626C5.24075 14.3322 6.44553 16.4215 8.28273 17.6503C7.20004 17.6077 6.14271 17.3101 5.19672 16.7818V16.8658C5.19672 20.184 7.54225 22.9338 10.6683 23.5662C10.0813 23.7186 9.47753 23.7966 8.87111 23.7983C8.42682 23.7983 8.00655 23.7543 7.58227 23.6943C8.44683 26.4 10.9645 28.3653 13.9624 28.4293C11.6169 30.2665 8.67898 31.3472 5.48891 31.3472C4.91654 31.3472 4.3882 31.3272 3.83984 31.2632C6.86581 33.2044 10.4561 34.3252 14.3226 34.3252C26.8748 34.3252 33.7432 23.9264 33.7432 14.9005C33.7432 14.6044 33.7432 14.3082 33.7232 14.012C35.0521 13.0393 36.2168 11.8346 37.1455 10.4817Z" fill="white"/>
+					</svg>
+				</a>
+
+				<a href="#" class="footer-links-item">
+					<svg class="footer-links-item-img" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M31.2126 0.786133H1.75349C1.04503 0.786133 0.472656 1.3585 0.472656 2.06696V31.5261C0.472656 32.2345 1.04503 32.8069 1.75349 32.8069H31.2126C31.9211 32.8069 32.4934 32.2345 32.4934 31.5261V2.06696C32.4934 1.3585 31.9211 0.786133 31.2126 0.786133ZM27.5142 10.1322H24.9565C22.9512 10.1322 22.563 11.0848 22.563 12.4857V15.5717H27.3501L26.7257 20.4029H22.563V32.8069H17.5718V20.4069H13.397V15.5717H17.5718V12.0094C17.5718 7.87473 20.0974 5.62127 23.7878 5.62127C25.5569 5.62127 27.0739 5.75336 27.5182 5.8134V10.1322H27.5142Z" fill="white"/>
+					</svg>
+				</a>
+
+				<a href="#" class="footer-links-item">
+					<svg class="footer-links-item-img" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.197 4.78613H6.73786C6.0294 4.78613 5.45703 5.3585 5.45703 6.06696V35.5261C5.45703 36.2345 6.0294 36.8069 6.73786 36.8069H36.197C36.9054 36.8069 37.4778 36.2345 37.4778 35.5261V6.06696C37.4778 5.3585 36.9054 4.78613 36.197 4.78613ZM14.9552 32.0718H10.2041V16.7899H14.9552V32.0718ZM12.5817 14.7006C12.037 14.7006 11.5046 14.5391 11.0517 14.2365C10.5989 13.9339 10.2459 13.5038 10.0375 13.0006C9.82906 12.4974 9.77453 11.9437 9.88078 11.4095C9.98704 10.8754 10.2493 10.3847 10.6344 9.99956C11.0196 9.61443 11.5102 9.35216 12.0444 9.24591C12.5786 9.13965 13.1323 9.19418 13.6355 9.40261C14.1387 9.61104 14.5688 9.964 14.8713 10.4169C15.1739 10.8697 15.3354 11.4021 15.3354 11.9468C15.3314 13.4678 14.0986 14.7006 12.5817 14.7006ZM32.7427 32.0718H27.9957V24.639C27.9957 22.8659 27.9636 20.5884 25.5261 20.5884C23.0565 20.5884 22.6762 22.5176 22.6762 24.5109V32.0718H17.9331V16.7899H22.4881V18.8793H22.5521C23.1845 17.6785 24.7335 16.4097 27.047 16.4097C31.8582 16.4097 32.7427 19.5757 32.7427 23.6904V32.0718Z" fill="white"/>
+					</svg>
+				</a>
+
+			</div>
+		<p class="footer-reserved">Copyright 2021</p>
+	</footer>
 
 </body>
 
